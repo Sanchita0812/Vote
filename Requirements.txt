@@ -1,6 +1,11 @@
-streamlit==0.83.0
-tensorflow==2.5.0
-keras==2.4.0
-numpy==1.19.2
-matplotlib==3.4.2
+streamlit==1.11.0
+tensorflow==2.9.1
+keras==2.9.0
+numpy==1.23.1
+matplotlib==3.5.2
 pillow==8.3.1
+plotly==5.8.0
+seaborn==0.11.2
+sklearn==0.0
+pandas==1.4.3
+
