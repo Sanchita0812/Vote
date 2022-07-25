@@ -2,16 +2,16 @@ import streamlit as st
 import urllib
 from PIL import Image
 import time
-import numpy as np
+import numpy as npp
 import tensorflow as tf
 from tensorflow import keras
-from tensorflow.keras.preprocessing import image
+#from tensorflow.keras.preprocessing import image
 import pandas as pd
 import pickle
 
 # loading in the model to predict on the data
 pickle_in = open('model1 (1).pkl', 'rb')
-classifier = pickle.load(pickle_in)
+Voting = pickle.load(pickle_in)
 
 
 def welcome():
@@ -20,7 +20,7 @@ def welcome():
 # the data which the user inputs
 def prediction(Communication_Skills, Student_Involvement , Teacher_Relations, Leadership_Skills, Anonymous_Voting_Score):  
    
-    prediction = classifier.predict(
+    prediction = Voting.predict(
         [[Communication_Skills, Student_Involvement, Teacher_Relations, Leadership_Skills, Anonymous_Voting_Score]])
     print(prediction)
     return prediction
