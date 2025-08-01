@@ -27,3 +27,4 @@ def generate_password(length=12, use_lowercase=True, use_uppercase=True, use_num
 if __name__ == "__main__":
     password = generate_password()
     print(f"Generated password: {password}")
+    print("hello, world")
